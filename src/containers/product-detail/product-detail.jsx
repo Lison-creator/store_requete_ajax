@@ -1,18 +1,18 @@
+import { useSelector } from "react-redux";
 import PriceDisplay from "../../components/price-display/price-display";
 import style from "./product-detail.module.css"
 
 
-/* Fausses données pour la maquette */
-const selectedProduct = {
-    name: "Nom du produit",
-    price: 42,
-    description: "la description",
-    /* Dans un server classique, les images osnt stockées dans une db */
-    image: "images/chat.jpg"
-}
-
 const ProductDetail = () => {
+    const selectedProduct = useSelector(s => s.product.selectedProduct)
 
+    if (selectedProduct === null) {
+        return (
+            <div>
+                <h2>Pas de produit selectionné</h2>
+            </div>
+        )
+    }
     return (
         <div className={style.productDetailContainer}>
             <h2>Détail du produit</h2>
