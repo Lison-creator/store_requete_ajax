@@ -1,7 +1,31 @@
+/* Typo: */
+@font-face {
+  font-family: "ubuntu";
+  src:url("../public/fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "cocogoose";
+  src:url("../public/fonts/Cocogoose-Pro-trial.ttf");
+}
+@font-face {
+  font-family: "montserrat";
+  src:url("../public/fonts/Montserrat-Regular.ttf");
+}
+
+
 .App {
   text-align: center;
 }
 
+body{
+  background-color: #282c34;
+  color:antiquewhite;
+}
+
+.titre{
+  font-family:"cocogoose";
+  margin-bottom: 50px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
