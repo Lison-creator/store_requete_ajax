@@ -50,20 +50,23 @@ export const searchWeather = (city) => {
         dispatch(loadingWeather());
 
 
-        axios.get("https://openweathermap.org/data/2.5/weather", {
-            q: city,
-            appid: 'c3fa448b20d4333b499f552522c429d3',
-            units: 'metric',
-            lang: 'fr'
+        axios.get("https://api.openweathermap.org/data/2.5/weather", {
+            params: {
+                q: city,
+                appid: 'c3fa448b20d4333b499f552522c429d3',
+                units: 'metric',
+                lang: 'fr'
+            }
+
 
         }).then(response => {
             /* On déclenche l'action result */
             dispatch(resultWeather(response.data));
         }).catch(error => {
-            const errorMessage = (error.response && error.response.status === 404) ?
+            const message = (error.response && error.response.status === 404) ?
                 "Ville non trouvée" : "La requête a échoué";
             /* On déclenche l'action "error" */
-            dispatch(errorMessage(errorMessage));
+            dispatch(errorMessage(message));
 
         })
 

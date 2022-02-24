@@ -24,7 +24,7 @@ const WeatherContainer = () => {
             {isLoading ? (
                 <LoadingScreen />
             ) : errorMessage ? (
-                <ErrorScreen />
+                <ErrorScreen message={errorMessage} />
             ) : data != null && (
                 <WeatherDisplay{...data} /> /* ...data = "data = data.name , data.desc etc") */
             )
