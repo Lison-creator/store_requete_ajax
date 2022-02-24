@@ -1,0 +1,35 @@
+.button {
+    background-color: #49a4ce; /* Green */
+    border-radius:5px;
+    border:none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .button:hover{
+      background-color: #3a7c9b;
+  }
+.formSearchBar{
+    display: flex;
+flex-direction: column;
+}
+
+.formSearchBar input{
+    width: 150px;
+margin: auto;
+border-radius: 5px;
+}
+.formSearchBar button{
+    width: 150px;
+margin: auto;
+  margin-top: auto;
+margin-top: 10px;
+}
+
+.erreur{
+    color:rgb(182, 69, 69);
+    font-weight: bold;
+}

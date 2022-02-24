@@ -7,9 +7,17 @@
     margin-bottom: 20px;
     padding-top:15px;
     padding-bottom:15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.productDetailContainer:hover{
+
+box-shadow: -1px 10px 32px 3px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 10px 32px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 10px 32px 3px rgba(0,0,0,0.75);
 }
 .productDetailContainer img{
     border-radius:5px;
     box-shadow: 5px 5px 5px black;
-    width:300px;
+    width:200px;
 }

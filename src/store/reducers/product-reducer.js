@@ -33,6 +33,28 @@ const initialProductState = {
             description: "Cet animal curieux s'echappera de chez vous à la moindre occasion.",
             /* Dans un server classique, les images osnt stockées dans une db */
             image: "images/renard.jpg"
+        },
+        {
+            id: 5,
+            name: "Ocelot",
+            price: 87_000_500,
+            description: "L'ocelot vit dans les marais. Bonne chance pour en recréer un chez vous.",
+            /* Dans un server classique, les images osnt stockées dans une db */
+            image: "images/ocelot.jpg"
+        }, {
+            id: 6,
+            name: "Jaguar",
+            price: 60_000_000,
+            description: "Le jaguar aime beaucoup nager. Pensez à lui permettre de se tremper régulièrement.",
+            /* Dans un server classique, les images osnt stockées dans une db */
+            image: "images/jaguar.jpg"
+        }, {
+            id: 7,
+            name: "Guépard",
+            price: 450_000_000,
+            description: "Le plus rapide de tous les animaux terrestres, si vous en capturez un, réveillez-vous, vous vous êtes endormi.",
+            /* Dans un server classique, les images osnt stockées dans une db */
+            image: "images/guepard.jpg"
         }
 
     ],
